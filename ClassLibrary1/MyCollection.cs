@@ -8,7 +8,7 @@ namespace ClassLibrary1
     public class MyCollection<T> 
     {
 
-        public ArrayList myList;
+        public List<T> myList;
 
         public T this[int index]
         {
@@ -24,7 +24,7 @@ namespace ClassLibrary1
 
         public MyCollection()
         {
-            myList = new ArrayList();
+            myList = new List<T>();
         }
 
         public void Add(T item)
